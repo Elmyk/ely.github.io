@@ -19,11 +19,11 @@ document.querySelectorAll('nav a').forEach(anchor => {
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     if (window.scrollY > 100) {
-        header.style.backgroundColor = '#005a9e';
-        header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+        header.style.backgroundColor = '#121212';
+        header.style.boxShadow = '0 2px 10px rgba(209, 0, 0, 0.3)';
     } else {
-        header.style.backgroundColor = '#0078d7';
-        header.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+        header.style.backgroundColor = '#121212';
+        header.style.boxShadow = '0 2px 5px rgba(0,0,0,0.3)';
     }
 });
 
