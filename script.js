@@ -39,11 +39,22 @@ document.querySelectorAll('.project').forEach(project => {
 });
 
 // Form submission
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const inputs = this.querySelectorAll('input, textarea');
+    let isValid = true;
+    
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            input.style.borderColor = 'red';
+            isValid = false;
+        } else {
+            input.style.borderColor = '#444';
+        }
+    });
+    
+    if (isValid) {
         alert('Thank you for your message! I will get back to you soon.');
         this.reset();
-    });
-}
+    }
+});
