@@ -109,10 +109,13 @@ h2::after {
 .profile-img {
     width: 100%;
     max-width: 300px;
+    height: 300px; /* Fixed height to match width */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
     border-radius: 50%;
     border: 5px solid var(--primary-color);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
 
 /* Skills Section */
 .skills-container {
