@@ -8,6 +8,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Side Drawer -->
+    <div id="sideDrawer" class="side-drawer">
+        <button id="closeDrawer" class="close-drawer">&times;</button>
+        <div class="drawer-content">
+            <div class="drawer-profile">
+                <img src="256025142_1972956299546824_2581274991923159701_n.jpg" alt="Elysiah's profile picture">
+                <h3>Elysiah</h3>
+                <p>Web Developer & Designer</p>
+            </div>
+            <nav class="drawer-nav">
+                <a href="#about"><i class="fas fa-user"></i> About</a>
+                <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+            <div class="drawer-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-codepen"></i></a>
+                <a href="https://github.com/elysiah"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/elysiah"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="drawerOverlay" class="drawer-overlay"></div>
+
+    <!-- Hamburger Menu -->
+    <div id="hamburgerMenu" class="hamburger-menu">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+
     <header>
         <div class="container">
             <h1>Elysiah</h1>
@@ -21,12 +54,22 @@
         </div>
     </header>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <section id="about" class="container">
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-text">
                 <p>Hi! I'm Ely, a passionate web developer with expertise in creating beautiful, functional websites. I love turning ideas into reality through code.</p>
                 <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
+                <div class="interactive-badges">
+                    <span class="badge">Frontend</span>
+                    <span class="badge">UI/UX</span>
+                    <span class="badge">Responsive Design</span>
+                </div>
             </div>
             <div class="profile-image">
                 <img src="256025142_1972956299546824_2581274991923159701_n.jpg" alt="Elysiah's profile picture" class="profile-img">
@@ -40,18 +83,32 @@
             <div class="skill">
                 <i class="fab fa-html5"></i>
                 <p>HTML5</p>
+                <div class="skill-progress" data-level="95"></div>
             </div>
             <div class="skill">
                 <i class="fab fa-css3-alt"></i>
                 <p>CSS3</p>
+                <div class="skill-progress" data-level="90"></div>
             </div>
             <div class="skill">
                 <i class="fab fa-js"></i>
                 <p>JavaScript</p>
+                <div class="skill-progress" data-level="85"></div>
             </div>
             <div class="skill">
                 <i class="fab fa-git-alt"></i>
                 <p>Git</p>
+                <div class="skill-progress" data-level="80"></div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+                <div class="skill-progress" data-level="75"></div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-node-js"></i>
+                <p>Node.js</p>
+                <div class="skill-progress" data-level="70"></div>
             </div>
         </div>
     </section>
@@ -60,18 +117,41 @@
         <h2>My Projects</h2>
         <div class="projects-grid">
             <div class="project">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/252525/d10000?text=Responsive+Website" alt="Responsive Website">
+                </div>
                 <h3>Responsive Website</h3>
                 <p>A fully responsive website built with modern CSS techniques including Flexbox and Grid.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
                 <a href="#" class="project-link">View Project</a>
             </div>
             <div class="project">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/252525/d10000?text=JavaScript+Game" alt="JavaScript Game">
+                </div>
                 <h3>JavaScript Game</h3>
                 <p>An interactive browser game built with vanilla JavaScript.</p>
+                <div class="project-tech">
+                    <span>JavaScript</span>
+                    <span>Canvas API</span>
+                </div>
                 <a href="#" class="project-link">View Project</a>
             </div>
             <div class="project">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/252525/d10000?text=Portfolio+Template" alt="Portfolio Template">
+                </div>
                 <h3>Portfolio Template</h3>
                 <p>A customizable portfolio template for developers and designers.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
                 <a href="#" class="project-link">View Project</a>
             </div>
         </div>
@@ -84,12 +164,16 @@
                 <p><i class="fas fa-envelope"></i> <a href="mailto:elysiah@example.com">elysiah@example.com</a></p>
                 <p><i class="fab fa-github"></i> <a href="https://github.com/elysiah" target="_blank">github.com/elysiah</a></p>
                 <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/elysiah" target="_blank">linkedin.com/in/elysiah</a></p>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215373510548!2d-73.9878449245254!3d40.74844097138959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689872345678!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
+                <div class="form-message"></div>
             </form>
         </div>
     </section>
