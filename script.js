@@ -53,7 +53,7 @@ window.addEventListener('scroll', function() {
     
     if (window.scrollY > 100) {
         header.style.backgroundColor = '#121212';
-        header.style.boxShadow = '0 2px 10px rgba(209, 0, 0, 0.3)';
+        header.style.boxShadow = '0 2px 10px rgba(58, 134, 255, 0.3)';
     } else {
         header.style.backgroundColor = '#121212';
         header.style.boxShadow = '0 2px 5px rgba(0,0,0,0.3)';
@@ -91,9 +91,9 @@ const skillProgressBars = document.querySelectorAll('.skill-progress');
 
 function animateProgressBars() {
     skillProgressBars.forEach(bar => {
-        const rect = bar.getBoundingClientRect();
+        const rect = bar.parentElement.getBoundingClientRect();
         if (rect.top <= window.innerHeight - 100) {
-            const level = bar.getAttribute('data-level');
+            const level = bar.parentElement.getAttribute('data-level');
             bar.style.width = '0';
             setTimeout(() => {
                 bar.style.width = level + '%';
@@ -130,24 +130,24 @@ contactForm.addEventListener('submit', function(e) {
         // Simulate form submission
         formMessage.textContent = 'Thank you for your message! I will get back to you soon.';
         formMessage.classList.remove('error');
-        formMessage.classList.add('success');
+        formMessage.classList.add('success', 'show');
         
         // Reset form after 3 seconds
         setTimeout(() => {
             this.reset();
-            formMessage.classList.remove('success');
+            formMessage.classList.remove('success', 'show');
             formMessage.textContent = '';
         }, 3000);
     } else {
         formMessage.textContent = 'Please fill in all required fields.';
         formMessage.classList.remove('success');
-        formMessage.classList.add('error');
+        formMessage.classList.add('error', 'show');
     }
 });
 
-// Typewriter effect for tagline (optional)
+// Typewriter effect for tagline
 const tagline = document.querySelector('.tagline');
-const text = "Web Developer & Designer";
+const text = "Web Developer & UI/UX Designer";
 let i = 0;
 
 function typeWriter() {
