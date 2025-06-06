@@ -228,9 +228,10 @@ header nav a:hover::after {
 }
 
 .hero-image img {
-  border-radius: 15px;
-  max-width: 100%;
-  height: auto;
+  border-radius: 50%;
+  width: 300px; /* Adjust this value to make it smaller */
+  height: 300px;
+  object-fit: cover;
   box-shadow: 0 20px 40px rgba(0,0,0,0.3);
   transition: var(--transition);
 }
