@@ -1,7 +1,6 @@
 // Enhanced Typing Effect
 const textArray = [ 
   "I'm a Web Developer",
-  "Let's build something amazing!"
 ];
 let typedText = document.getElementById("typedText");
 let cursor = document.querySelector(".cursor");
@@ -89,7 +88,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   }
   
   // Simulate form submission
-  formMessage.textContent = `Thank you, ${name}! Your message has been sent.`;
+  formMessage.textContent = `Thank you, ${name}! Your message has been sent. I'll get back to you soon.`;
   formMessage.style.color = "lightgreen";
   this.reset();
   
@@ -124,7 +123,7 @@ const skillBars = document.querySelectorAll(".skill-level");
 
 function animateSkillBars() {
   skillBars.forEach((bar) => {
-    const width = bar.style.width;
+    const width = bar.getAttribute("data-width");
     bar.style.width = "0";
     setTimeout(() => {
       bar.style.width = width;
@@ -144,3 +143,14 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 observer.observe(skillsSection);
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
