@@ -1,8 +1,6 @@
 // Enhanced Typing Effect
-const textArray = [
-  "Hi, I'm Jane Doe", 
-  "I'm a Web Developer", 
-  "I'm a UI/UX Designer",
+const textArray = [ 
+  "I'm a Web Developer",
   "Let's build something amazing!"
 ];
 let typedText = document.getElementById("typedText");
