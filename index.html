@@ -1,291 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elysiah Lunesa's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jane Doe | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Side Drawer -->
-    <div id="sideDrawer" class="side-drawer">
-        <button id="closeDrawer" class="close-drawer">&times;</button>
-        <div class="drawer-content">
-            <div class="drawer-profile">
-    <img src="256025142_1972956299546824_2581274991923159701_n.jpg" alt="Elysiah's profile picture">
-    <h3>Elysiah Lunesa</h3>
-    <p>Web Developer & UI/UX Designer</p>
-</div>
-            <nav class="drawer-nav">
-                <a href="#about"><i class="fas fa-user"></i> About</a>
-                <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
-                <a href="#skills"><i class="fas fa-code"></i> Skills</a>
-                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-            </nav>
-            <div class="drawer-social">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-codepen"></i></a>
-                <a href="https://github.com/elysiah"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/elysiah"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
+  <header>
+    <div class="avatar-container">
+      <img src="256025142_1972956299546824_2581274991923159701_n.jpg" alt="Jane Doe" class="avatar" />
     </div>
-    <div id="drawerOverlay" class="drawer-overlay"></div>
-
-    <!-- Hamburger Menu -->
-    <div id="hamburgerMenu" class="hamburger-menu">
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
+    <h1><span id="typedText"></span><span class="cursor">|</span></h1>
+    <p>Web Developer & Designer</p>
+    <div class="social-links">
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
+  </header>
 
-    <header>
-        <div class="container">
-            <h1>Elysiah Lunesa</h1>
-            <p class="tagline">Web Developer & UI/UX Designer</p>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <nav>
+    <ul>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" title="Go to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+  <!-- Shortcut Buttons -->
+  <div class="shortcut-buttons">
+    <a href="#about" class="shortcut" title="Go to About">🧑</a>
+    <a href="#skills" class="shortcut" title="Go to Skills">📊</a>
+    <a href="#projects" class="shortcut" title="Go to Projects">💻</a>
+    <a href="#contact" class="shortcut" title="Go to Contact">✉️</a>
+  </div>
 
-    <section id="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h2>Hi, I'm <span>Elysiah Lunesa</span></h2>
-                <h3>Web Developer & UI/UX Designer</h3>
-                <p class="quote">"Designing websites that inspire and empower."</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn-primary">View Projects</a>
-                    <a href="#contact" class="btn-secondary">Contact Me</a>
-                </div>
-            </div>
-           <div class="hero-image">
-    <img src="256025142_1972956299546824_2581274991923159701_n.jpg" alt="Elysiah's profile picture">
-</div>
+  <main>
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>I create beautiful, responsive websites and love turning ideas into reality through code and design. With 5 years of experience in web development, I specialize in creating intuitive user experiences with clean, efficient code.</p>
+        <p>When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting with new design tools.</p>
+      </div>
     </section>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I'm a passionate web developer and UI/UX designer with expertise in creating beautiful, functional, and user-friendly websites. I love turning ideas into reality through code and design.</p>
-                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
-                <div class="interactive-badges">
-                    <span class="badge">Frontend</span>
-                    <span class="badge">UI/UX</span>
-                    <span class="badge">Responsive Design</span>
-                    <span class="badge">Accessibility</span>
-                    <span class="badge">Performance</span>
-                </div>
-            </div>
-            <div class="profile-image">
-                <img src="https://via.placeholder.com/600x600/252525/3a86ff?text=EL" alt="Elysiah's profile picture" class="profile-img">
-                <div class="profile-overlay">
-                    <div class="overlay-content">
-                        <h3>Let's Build Something Amazing</h3>
-                        <a href="#contact" class="contact-btn">Contact Me</a>
-                    </div>
-                </div>
-            </div>
+    <section id="skills" class="fade-in">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <div class="skill-info">
+            <span>HTML/CSS</span>
+            <span>95%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-level html"></div>
+          </div>
         </div>
+        <div class="skill">
+          <div class="skill-info">
+            <span>JavaScript</span>
+            <span>90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-level js"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-info">
+            <span>React</span>
+            <span>85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-level react"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-info">
+            <span>UI/UX Design</span>
+            <span>80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-level design"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="skills-container">
-                <div class="skill" data-level="95">
-                    <i class="fab fa-html5"></i>
-                    <p>HTML5</p>
-                    <div class="skill-progress">
-                        <span class="progress-value">95%</span>
-                    </div>
-                </div>
-                <div class="skill" data-level="90">
-                    <i class="fab fa-css3-alt"></i>
-                    <p>CSS3</p>
-                    <div class="skill-progress">
-                        <span class="progress-value">90%</span>
-                    </div>
-                </div>
-                <div class="skill" data-level="85">
-                    <i class="fab fa-js"></i>
-                    <p>JavaScript</p>
-                    <div class="skill-progress">
-                        <span class="progress-value">85%</span>
-                    </div>
-                </div>
-                
-                <div class="skill" data-level="75">
-                    <i class="fab fa-figma"></i>
-                    <p>Figma</p>
-                    <div class="skill-progress">
-                        <span class="progress-value">75%</span>
-                    </div>
-                </div>
-                
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400/1e293b/38bdf8?text=Portfolio');"></div>
+          <div class="project-content">
+            <h3>Animated Portfolio</h3>
+            <p>Built with vanilla JS, featuring scroll animations and interactive effects.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
             </div>
+            <a href="#" class="project-link">View Project</a>
+          </div>
         </div>
+        <div class="project-card">
+          <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400/1e293b/38bdf8?text=Quiz+App');"></div>
+          <div class="project-content">
+            <h3>Interactive Quiz App</h3>
+            <p>A fun and responsive quiz web app with instant feedback and score tracking.</p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400/1e293b/38bdf8?text=E-Commerce');"></div>
+          <div class="project-content">
+            <h3>E-Commerce Dashboard</h3>
+            <p>Admin dashboard for e-commerce platform with analytics and inventory management.</p>
+            <div class="project-tags">
+              <span>Vue.js</span>
+              <span>Firebase</span>
+              <span>Chart.js</span>
+            </div>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="container">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <div class="project-inner">
-                    <div class="project-front">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/252525/3a86ff?text=HyperDetails" alt="HyperDetails Project">
-                        </div>
-                        <h3>HyperDetails</h3>
-                        <p>A hyperbibliography tool with advanced features</p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>API</span>
-                            <span>UI/UX</span>
-                        </div>
-                    </div>
-                    <div class="project-back">
-                        <h3>Project Details</h3>
-                        <p>An advanced hyperbibliography tool with multiple features:</p>
-                        <ul>
-                            <li>Scan reading functionality</li>
-                            <li>Editor creation tools</li>
-                            <li>Interactive response console</li>
-                            <li>Web-based implementation</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Project</a>
-                            <a href="#" class="project-code">View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-inner">
-                    <div class="project-front">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/252525/3a86ff?text=TextView" alt="TextView Project">
-                        </div>
-                        <h3>TextView</h3>
-                        <p>Advanced text processing application</p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>Text Processing</span>
-                            <span>Key Codes</span>
-                        </div>
-                    </div>
-                    <div class="project-back">
-                        <h3>Project Details</h3>
-                        <p>A text processing tool with special features:</p>
-                        <ul>
-                            <li>Advanced key code handling</li>
-                            <li>Custom text transformations</li>
-                            <li>Real-time processing</li>
-                            <li>User-friendly interface</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Project</a>
-                            <a href="#" class="project-code">View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-inner">
-                    <div class="project-front">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/252525/3a86ff?text=Portfolio" alt="Portfolio Template">
-                        </div>
-                        <h3>Portfolio Template</h3>
-                        <p>A customizable portfolio template</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="project-back">
-                        <h3>Project Details</h3>
-                        <p>A clean, modern portfolio template with multiple sections:</p>
-                        <ul>
-                            <li>Responsive design</li>
-                            <li>Dark/light mode</li>
-                            <li>Easy customization</li>
-                            <li>Interactive elements</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Project</a>
-                            <a href="#" class="project-code">View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="contact" class="fade-in">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder=" " required />
+            <label for="name">Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder=" " required />
+            <label for="email">Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder=" " required></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <p id="formMessage"></p>
+        </form>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>jane.doe@example.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 (555) 123-4567</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>San Francisco, CA</span>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:elysiah@example.com">elysiah@example.com</a></p>
-                    <p><i class="fab fa-github"></i> <a href="https://github.com/elysiah" target="_blank">github.com/elysiah</a></p>
-                    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/elysiah" target="_blank">linkedin.com/in/elysiah</a></p>
-                    <div class="contact-social">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-codepen"></i></a>
-                        <a href="https://github.com/elysiah"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/elysiah"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" required>
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" required></textarea>
-                        <label for="message">Message</label>
-                    </div>
-                    <button type="submit" class="submit-btn">
-                        <span class="btn-text">Send Message</span>
-                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
-                    </button>
-                    <div class="form-message"></div>
-                </form>
-            </div>
-        </div>
-    </section>
+  <footer>
+    <p>&copy; 2025 Jane Doe | All rights reserved</p>
+  </footer>
 
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="year"></span> Elysiah Lunesa. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-codepen"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
